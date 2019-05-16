@@ -6,10 +6,12 @@ import {
 
 class BandItem extends React.Component {
 	render() {
-		console.log(this.props)
 		return(
 			<View>
-				<Text>{this.props.item.band_name}</Text>
+				<Text>{this.props.band.band_name}</Text>
+				<Text>{this.props.band.fans*1000}</Text>
+				<Text>{this.props.band.origin}</Text>
+				<Text>{this.props.band.formed}</Text>
 			</View>
 		)
 	}
