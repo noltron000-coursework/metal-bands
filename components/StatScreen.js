@@ -10,7 +10,7 @@ class StatScreen extends React.Component {
 
 	render() {
 		return(
-			<Text>Band Screen</Text>
+			<Text>Stats Screen</Text>
 		)
 	}
 }
