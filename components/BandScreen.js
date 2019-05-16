@@ -1,7 +1,12 @@
 import React from 'react'
 import {
-	Text
+	Text,
+	View
 } from 'react-native'
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { faChartBar } from '@fortawesome/free-solid-svg-icons'
+import { faFistRaised } from '@fortawesome/free-solid-svg-icons'
+
 
 class BandScreen extends React.Component {
 	constructor(props) {
@@ -10,7 +15,11 @@ class BandScreen extends React.Component {
 
 	render() {
 		return(
-			<Text>Band Screen</Text>
+			<View>
+				<Text>Band Screen</Text>
+				<FontAwesomeIcon icon={ faChartBar } />
+				<FontAwesomeIcon icon={ faFistRaised } />
+			</View>
 		)
 	}
 }
