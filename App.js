@@ -1,13 +1,22 @@
+// use react
 import React from 'react'
-import Index from './components/index.js'
 
+// use react navigation
+import { 
+	createBottomTabNavigator,
+	createAppContainer,
+} from 'react-navigation'
 
-class App extends React.Component {
-	render() {
-		return (
-			<Index />
-		)
-	}
-}
+// import local components
+import BandScreen from './components/BandScreen'
+import StatScreen from './components/StatScreen'
+
+// main tab navigation at bottom
+const MainNavigator = createBottomTabNavigator({
+	Bands: BandScreen,
+	Stats: StatScreen,
+})
+
+const App = createAppContainer(MainNavigator)
 
 export default App
