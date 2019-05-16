@@ -10,7 +10,7 @@ import {
 import BandItem from './BandItem.js'
 
 // import local data
-import * as data from '../data/metal-50.json'
+import * as BandData from '../data/metal-50.json'
 
 class BandScreen extends React.Component {
 	constructor(props) {
@@ -20,7 +20,7 @@ class BandScreen extends React.Component {
 	// renderItem is a helper function.
 	// this gets executed N times for each band item.
 	// it returns a formatted JSX component for a band item.
-	_renderItem = ({index, item}) => {
+	_renderItem = (item) => {
 		return (
 			<BandItem
 				item={item}
@@ -36,17 +36,15 @@ class BandScreen extends React.Component {
 	}
 
 	render() {
-		// console.log(data)
-		console.log(data)
 		return(
 			<View>
-				<Text>Band Screen</Text>
-				{/* <FlatList
-					data={data}
+				<Text>Band List Screen</Text>
+				<Text>
+				<FlatList
+					data={BandData}
 					renderItem={this._renderItem}
-					_keyExtractor={this._keyExtractor}
-				/> */}
-				{/* Flat List items */}
+					keyExtractor={this._keyExtractor}
+				/>
 			</View>
 		)
 	}

@@ -6,6 +6,7 @@ import {
 
 class BandItem extends React.Component {
 	render() {
+		console.log(this.props)
 		return(
 			<View>
 				<Text>{this.props.item.band_name}</Text>
