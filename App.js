@@ -13,6 +13,7 @@ import { faChartBar } from '@fortawesome/free-solid-svg-icons'
 import { faFistRaised } from '@fortawesome/free-solid-svg-icons'
 
 // import local components
+import Styles from './components/Styles.js'
 import BandScreen from './components/BandScreen.js'
 import StatScreen from './components/StatScreen.js'
 
@@ -21,20 +22,25 @@ const MainNavigator = createBottomTabNavigator({
 	Bands: {
 		screen: BandScreen,
 		navigationOptions: {
-			tabBarIcon: ({ tintColor }) => {
-				return (<FontAwesomeIcon icon={ faFistRaised } />)
+			tabBarIcon: ({TintColor}) => {
+				return (<FontAwesomeIcon icon={ faFistRaised } color='red' />)
 			}
 		}
 	},
-
 	Stats: {
 		screen: StatScreen,
 		navigationOptions: {
-			tabBarIcon: ({ tintColor }) => {
-				return (<FontAwesomeIcon icon={ faChartBar } />)
+			tabBarIcon: ({TintColor}) => {
+				return (<FontAwesomeIcon icon={ faChartBar } color='red' />)
 			}
 		}
-	},
+	}
+},{
+	tabBarOptions: {
+		style: {
+			backgroundColor: '#000',
+		}
+	}
 })
 
 const App = createAppContainer(MainNavigator)

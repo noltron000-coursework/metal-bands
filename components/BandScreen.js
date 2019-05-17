@@ -7,12 +7,14 @@ import {
 } from 'react-native'
 
 // import local components
+import Styles from './Styles.js'
 import BandItem from './BandItem.js'
 import HorizontalRule from './HorizontalRule'
 
 // import local data
 import BandData from '../data/metal-50.json'
 
+// create primary export
 class BandScreen extends React.Component {
 	constructor(props) {
 		super(props)
@@ -48,8 +50,8 @@ class BandScreen extends React.Component {
 
 	render() {
 		return(
-			<View>
-				<Text>Band List Screen</Text>
+			<View style={Styles.container}>
+				<Text style={Styles.text}>Band List Screen</Text>
 				<FlatList
 					data={BandData}
 					renderItem={this._renderItem}

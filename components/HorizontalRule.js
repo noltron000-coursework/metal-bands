@@ -4,12 +4,17 @@ import {
 	View,
 } from 'react-native'
 
+// create primary export
 const HorizontalRule = () => {
 	return (
 		<View 
 			style={{
 				height: 1,
-				backgroundColor: "#CED0CE",
+				backgroundColor: "#666",
+				marginTop: 12,
+				marginBottom: 12,
+				marginLeft: 24,
+				marginRight: 24,
 			}}
 		/>
 	)
