@@ -4,9 +4,9 @@ Metal fans need an app and you have to make it. Follow these steps to build the 
 
 These images shows what you would be making (without anny extra credit problems). 
 
-![final-metal-tab-1](/assets/final-metal-tab-1.jpeg)
+![final-metal-tab-1](./assets/final-metal-tab-1.jpg)
 
-![final-metal-tab-2](/assets/final-metal-tab-2.jpeg)
+![final-metal-tab-2](./assets/final-metal-tab-2.jpg)
 
 The core of the assessment is making the app. Save the styling and details for last. This will save you time as you work without wasting time solving problems that are worth fewer points. For this reason I recommend you solve the problems in the order listed here. 
 
